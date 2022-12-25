@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"time"
 
-	"gitee.com/hulutech/frame/config"
-	"gitee.com/hulutech/frame/database/driver"
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/config"
+	"github.com/hulutech-web/frame/database/driver"
+	"github.com/hulutech-web/frame/helpers/zone"
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/sqlserver"
 	"gorm.io/gorm"

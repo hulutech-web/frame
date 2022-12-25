@@ -2,8 +2,8 @@ package queue
 
 import (
 	"errors"
-	"gitee.com/hulutech/frame/cmd"
-	"gitee.com/hulutech/frame/hub"
+	"github.com/hulutech-web/frame/cmd"
+	"github.com/hulutech-web/frame/hub"
 )
 
 func init() {

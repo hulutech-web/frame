@@ -5,9 +5,9 @@ import (
 
 	"gorm.io/gorm"
 
-	"gitee.com/hulutech/frame/database"
+	"github.com/hulutech-web/frame/database"
 
-	"gitee.com/hulutech/frame/config"
+	"github.com/hulutech-web/frame/config"
 )
 
 type Migration struct {

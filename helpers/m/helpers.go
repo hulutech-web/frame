@@ -1,8 +1,8 @@
 package m
 
 import (
-	"gitee.com/hulutech/frame/database"
-	"gitee.com/hulutech/frame/model/helper"
+	"github.com/hulutech-web/frame/database"
+	"github.com/hulutech-web/frame/model/helper"
 )
 
 var h helper.Helper

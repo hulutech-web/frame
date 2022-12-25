@@ -7,7 +7,7 @@ import (
 	"github.com/go-playground/locales"
 	"github.com/go-playground/locales/currency"
 
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 type commonLang struct {

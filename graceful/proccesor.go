@@ -1,11 +1,11 @@
 package graceful
 
 import (
-	"gitee.com/hulutech/frame/cache"
-	//"gitee.com/hulutech/frame/helpers/m"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/monitor"
-	"gitee.com/hulutech/frame/queue"
+	"github.com/hulutech-web/frame/cache"
+	//"github.com/hulutech-web/frame/helpers/m"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/monitor"
+	"github.com/hulutech-web/frame/queue"
 )
 
 func closeQueue(quietly bool) {

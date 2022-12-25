@@ -1,6 +1,6 @@
 package lang
 
-import "gitee.com/hulutech/frame/context"
+import "github.com/hulutech-web/frame/context"
 
 type Context interface {
 	context.DataContextor

@@ -1,6 +1,6 @@
 package hub
 
-import "gitee.com/hulutech/frame/queue"
+import "github.com/hulutech-web/frame/queue"
 
 // hulu do the broadcast it self, for compatible with the queue driver which doesn't support topic broadcasting
 func topicName(e Eventer, l Listener, supportBroadCasting func() bool) string {

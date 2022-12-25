@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"sync"
 
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/request"
 	"github.com/iancoleman/strcase"
 	"gorm.io/gorm"
 )

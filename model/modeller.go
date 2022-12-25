@@ -1,6 +1,6 @@
 package model
 
-import "gitee.com/hulutech/frame/context"
+import "github.com/hulutech-web/frame/context"
 
 type Modeller interface {
 	BaseModeller

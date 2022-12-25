@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"gitee.com/hulutech/frame/policy"
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/policy"
+	"github.com/hulutech-web/frame/request"
 )
 
 func Policy(_policy policy.Policier, action policy.Action) request.HandlerFunc {

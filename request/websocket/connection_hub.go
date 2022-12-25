@@ -3,7 +3,7 @@ package websocket
 import (
 	"github.com/gofrs/uuid"
 
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/request"
 )
 
 type connectionHub struct {

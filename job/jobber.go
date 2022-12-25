@@ -3,7 +3,7 @@ package job
 import (
 	"github.com/golang/protobuf/proto"
 
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 var jobMap map[string]jobber

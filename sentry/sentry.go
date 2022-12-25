@@ -7,7 +7,7 @@ import (
 	"github.com/gin-contrib/sentry"
 	"github.com/gin-gonic/gin"
 
-	"gitee.com/hulutech/frame/config"
+	"github.com/hulutech-web/frame/config"
 )
 
 var enabled bool

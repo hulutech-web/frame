@@ -7,7 +7,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 type RateLimit struct {

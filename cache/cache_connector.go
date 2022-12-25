@@ -1,10 +1,10 @@
 package cache
 
 import (
-	"gitee.com/hulutech/frame/cache/driver/memory"
-	"gitee.com/hulutech/frame/cache/driver/redis"
+	"github.com/hulutech-web/frame/cache/driver/memory"
+	"github.com/hulutech-web/frame/cache/driver/redis"
 
-	"gitee.com/hulutech/frame/config"
+	"github.com/hulutech-web/frame/config"
 )
 
 var cer cacher

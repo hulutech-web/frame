@@ -8,13 +8,13 @@ import (
 	"strings"
 	"sync"
 
-	"gitee.com/hulutech/frame/app"
-	"gitee.com/hulutech/frame/helpers/log"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/http/middleware"
-	"gitee.com/hulutech/frame/policy"
-	"gitee.com/hulutech/frame/request"
-	"gitee.com/hulutech/frame/request/websocket"
+	"github.com/hulutech-web/frame/app"
+	"github.com/hulutech-web/frame/helpers/log"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/http/middleware"
+	"github.com/hulutech-web/frame/policy"
+	"github.com/hulutech-web/frame/request"
+	"github.com/hulutech-web/frame/request/websocket"
 )
 
 var RouteNameMap *routeNameMap

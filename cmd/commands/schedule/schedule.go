@@ -3,8 +3,8 @@ package schedule
 import (
 	"github.com/robfig/cron"
 
-	"gitee.com/hulutech/frame/cmd"
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/cmd"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 func init() {

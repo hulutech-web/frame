@@ -3,9 +3,9 @@ package websocket
 import (
 	"net/http"
 
-	"gitee.com/hulutech/frame/helpers/zone"
-	"gitee.com/hulutech/frame/http/controller"
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/helpers/zone"
+	"github.com/hulutech-web/frame/http/controller"
+	"github.com/hulutech-web/frame/request"
 )
 
 type Handler interface {

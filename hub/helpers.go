@@ -5,7 +5,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"gitee.com/hulutech/frame/queue"
+	"github.com/hulutech-web/frame/queue"
 )
 
 func Emit(e Eventer) (errs map[ListenerName]error) {

@@ -4,9 +4,9 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 
-	"gitee.com/hulutech/frame/helpers/pb"
-	"gitee.com/hulutech/frame/helpers/zone"
-	message "gitee.com/hulutech/frame/queue/protocol_buffers"
+	"github.com/hulutech-web/frame/helpers/pb"
+	"github.com/hulutech-web/frame/helpers/zone"
+	message "github.com/hulutech-web/frame/queue/protocol_buffers"
 )
 
 type producer struct {

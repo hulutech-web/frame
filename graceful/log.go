@@ -1,8 +1,8 @@
 package graceful
 
 import (
-	"gitee.com/hulutech/frame/helpers/log"
-	"gitee.com/hulutech/frame/helpers/toto"
+	"github.com/hulutech-web/frame/helpers/log"
+	"github.com/hulutech-web/frame/helpers/toto"
 )
 
 func panicRecover(quietly bool) {

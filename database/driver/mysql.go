@@ -3,8 +3,8 @@ package driver
 import (
 	"net/url"
 
-	"gitee.com/hulutech/frame/config"
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/config"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 type mysql struct {

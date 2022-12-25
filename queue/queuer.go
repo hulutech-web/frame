@@ -1,8 +1,8 @@
 package queue
 
 import (
-	"gitee.com/hulutech/frame/helpers/zone"
-	"gitee.com/hulutech/frame/queue/driver/nsq"
+	"github.com/hulutech-web/frame/helpers/zone"
+	"github.com/hulutech-web/frame/queue/driver/nsq"
 )
 
 func Initialize() {

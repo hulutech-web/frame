@@ -1,9 +1,9 @@
 package sysmdel
 
 import (
-	"gitee.com/hulutech/frame/helpers/m"
-	"gitee.com/hulutech/frame/helpers/zone"
-	"gitee.com/hulutech/frame/model"
+	"github.com/hulutech-web/frame/helpers/m"
+	"github.com/hulutech-web/frame/helpers/zone"
+	"github.com/hulutech-web/frame/model"
 )
 
 type Tenants struct {

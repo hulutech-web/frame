@@ -1,11 +1,11 @@
 package helper
 
 import (
-	"gitee.com/hulutech/frame/resources/lang"
+	"github.com/hulutech-web/frame/resources/lang"
 
-	"gitee.com/hulutech/frame/config"
+	"github.com/hulutech-web/frame/config"
 
-	"gitee.com/hulutech/frame/resources/lang/internal"
+	"github.com/hulutech-web/frame/resources/lang/internal"
 )
 
 func AddLocale(langName string, customTranslation *lang.CustomTranslation, validationTranslation *lang.ValidationTranslation) {

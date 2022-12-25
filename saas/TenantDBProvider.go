@@ -3,13 +3,13 @@ package saas
 import (
 	"database/sql"
 	"fmt"
-	sysmdel "gitee.com/hulutech/frame/model/sysmodel"
+	sysmdel "github.com/hulutech-web/frame/model/sysmodel"
 	"sync"
 
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/request"
 	"gorm.io/gorm"
-	// "gitee.com/hulutech/frame/helpers/cache"
-	// "gitee.com/hulutech/frame/helpers/debug"
+	// "github.com/hulutech-web/frame/helpers/cache"
+	// "github.com/hulutech-web/frame/helpers/debug"
 )
 
 type TenantInfoDB struct {

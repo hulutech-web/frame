@@ -10,10 +10,10 @@ import (
 	ut "github.com/go-playground/universal-translator"
 	"gopkg.in/go-playground/validator.v9"
 
-	"gitee.com/hulutech/frame/helpers/log"
-	"gitee.com/hulutech/frame/helpers/toto"
+	"github.com/hulutech-web/frame/helpers/log"
+	"github.com/hulutech-web/frame/helpers/toto"
 
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 type FieldError struct {

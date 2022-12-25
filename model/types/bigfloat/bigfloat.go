@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gitee.com/hulutech/frame/model/types/bigint"
+	"github.com/hulutech-web/frame/model/types/bigint"
 )
 
 // These constants define supported rounding modes.

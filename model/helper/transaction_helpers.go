@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"gitee.com/hulutech/frame/database"
+	"github.com/hulutech-web/frame/database"
 )
 
 type transactionFunc func(TransactionHelper *Helper)

@@ -9,7 +9,7 @@ import (
 	"github.com/gin-gonic/gin/binding"
 	"github.com/gin-gonic/gin/render"
 
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 type HttpContextor interface {

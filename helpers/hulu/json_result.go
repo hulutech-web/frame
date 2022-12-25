@@ -3,9 +3,9 @@ package hulu
 import (
 	"net/http"
 
-	"gitee.com/hulutech/frame/const"
-	"gitee.com/hulutech/frame/errors"
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/const"
+	"github.com/hulutech-web/frame/errors"
+	"github.com/hulutech-web/frame/request"
 	"github.com/gin-gonic/gin"
 )
 

@@ -2,10 +2,10 @@ package memory
 
 import (
 	"encoding"
-	. "gitee.com/hulutech/frame/cache/utils"
+	. "github.com/hulutech-web/frame/cache/utils"
 	c "github.com/patrickmn/go-cache"
 	"time"
-	//"gitee.com/hulutech/frame/helpers/zone"
+	//"github.com/hulutech-web/frame/helpers/zone"
 )
 
 type memoryBasic struct {

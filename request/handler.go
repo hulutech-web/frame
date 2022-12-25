@@ -3,7 +3,7 @@ package request
 import (
 	"github.com/gin-gonic/gin"
 
-	"gitee.com/hulutech/frame/request/http"
+	"github.com/hulutech-web/frame/request/http"
 )
 
 func ConvertHandlers(handlers []HandlerFunc) (ginHandlers []gin.HandlerFunc) {

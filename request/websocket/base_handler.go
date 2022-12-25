@@ -3,7 +3,7 @@ package websocket
 import (
 	"net/http"
 
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 type BaseHandler struct {

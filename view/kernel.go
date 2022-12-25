@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"sync"
 
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/request"
 )
 
 func Initialize(r *request.Engine) {

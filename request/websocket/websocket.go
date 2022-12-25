@@ -8,10 +8,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
 
-	"gitee.com/hulutech/frame/helpers/log"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/helpers/zone"
-	request_http "gitee.com/hulutech/frame/request/http"
+	"github.com/hulutech-web/frame/helpers/log"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/helpers/zone"
+	request_http "github.com/hulutech-web/frame/request/http"
 )
 
 func ConvertHandler(wsHandler Handler) gin.HandlerFunc {

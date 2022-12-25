@@ -5,7 +5,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"gitee.com/hulutech/frame/helpers/toto"
+	"github.com/hulutech-web/frame/helpers/toto"
 )
 
 type UserNotPermitError struct{}

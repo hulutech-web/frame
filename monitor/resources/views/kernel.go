@@ -1,8 +1,8 @@
 package views
 
 import (
-	"gitee.com/hulutech/frame/request"
-	"gitee.com/hulutech/frame/view"
+	"github.com/hulutech-web/frame/request"
+	"github.com/hulutech-web/frame/view"
 )
 
 func Initialize(r *request.Engine) {

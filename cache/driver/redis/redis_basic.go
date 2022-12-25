@@ -3,7 +3,7 @@ package redis
 import (
 	r "github.com/go-redis/redis"
 
-	. "gitee.com/hulutech/frame/cache/utils"
+	. "github.com/hulutech-web/frame/cache/utils"
 	"time"
 )
 

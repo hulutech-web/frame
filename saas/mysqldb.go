@@ -8,7 +8,7 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
 
-	dbconfig "gitee.com/hulutech/frame/config"
+	dbconfig "github.com/hulutech-web/frame/config"
 )
 
 func OpenDB(dsn string, maxIdleConns, maxOpenConns int, Prefix string) (db *gorm.DB, dber *sql.DB) {

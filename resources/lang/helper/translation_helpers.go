@@ -5,7 +5,7 @@ import (
 
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 
-	"gitee.com/hulutech/frame/resources/lang/internal"
+	"github.com/hulutech-web/frame/resources/lang/internal"
 )
 
 func CustomTranslate(messageID string, data map[string]interface{}, langName string) string {

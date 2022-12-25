@@ -5,8 +5,8 @@ import (
 
 	"github.com/ztrue/tracerr"
 
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/logs"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/logs"
 )
 
 func ErrPrintln(err error, fields toto.V) {

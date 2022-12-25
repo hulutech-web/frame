@@ -10,7 +10,7 @@ import (
 
 	"github.com/iancoleman/strcase"
 
-	"gitee.com/hulutech/frame/database"
+	"github.com/hulutech-web/frame/database"
 )
 type BaseModeller interface {
 	DB() *gorm.DB

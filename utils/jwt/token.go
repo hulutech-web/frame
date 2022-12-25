@@ -7,9 +7,9 @@ import (
 	"time"
 	"gopkg.in/dgrijalva/jwt-go.v3"
 
-	"gitee.com/hulutech/frame/helpers/cache"
-	"gitee.com/hulutech/frame/helpers/debug"
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/helpers/cache"
+	"github.com/hulutech-web/frame/helpers/debug"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 const ExpiredTime zone.Duration = 4 * zone.Hour //@todo move to configuration

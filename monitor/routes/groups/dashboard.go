@@ -1,9 +1,9 @@
 package groups
 
 import (
-	"gitee.com/hulutech/frame/monitor/app/http/controllers"
+	"github.com/hulutech-web/frame/monitor/app/http/controllers"
 
-	"gitee.com/hulutech/frame/route"
+	"github.com/hulutech-web/frame/route"
 )
 
 type DashboardGroup struct {

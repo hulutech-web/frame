@@ -2,7 +2,7 @@ package driver
 
 import (
 
-	"gitee.com/hulutech/frame/config"
+	"github.com/hulutech-web/frame/config"
 
 )
 

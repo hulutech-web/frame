@@ -3,7 +3,7 @@ package queue
 import (
 	"github.com/golang/protobuf/ptypes"
 
-	message "gitee.com/hulutech/frame/queue/protocol_buffers"
+	message "github.com/hulutech-web/frame/queue/protocol_buffers"
 )
 
 type queueRetry struct {

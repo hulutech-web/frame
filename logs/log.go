@@ -7,9 +7,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"gitee.com/hulutech/frame/config"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/sentry"
+	"github.com/hulutech-web/frame/config"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/sentry"
 )
 
 var log *logrus.Logger

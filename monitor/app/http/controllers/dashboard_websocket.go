@@ -3,9 +3,9 @@ package controllers
 import (
 	"errors"
 
-	"gitee.com/hulutech/frame/http/controller"
-	"gitee.com/hulutech/frame/monitor/app/logics/dashboard"
-	"gitee.com/hulutech/frame/request/websocket"
+	"github.com/hulutech-web/frame/http/controller"
+	"github.com/hulutech-web/frame/monitor/app/logics/dashboard"
+	"github.com/hulutech-web/frame/request/websocket"
 )
 
 type DashboardWebsocketController struct {

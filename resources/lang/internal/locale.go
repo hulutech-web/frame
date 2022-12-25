@@ -8,7 +8,7 @@ import (
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"golang.org/x/text/language"
 
-	"gitee.com/hulutech/frame/resources/lang"
+	"github.com/hulutech-web/frame/resources/lang"
 )
 
 type UnmarshalFunc = i18n.UnmarshalFunc

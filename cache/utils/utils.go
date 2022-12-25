@@ -1,6 +1,6 @@
 package utils
 
-import "gitee.com/hulutech/frame/helpers/zone"
+import "github.com/hulutech-web/frame/helpers/zone"
 
 func DurationFromNow(future zone.Time) zone.Duration {
 	return future.Sub(zone.Now())

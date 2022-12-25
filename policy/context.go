@@ -1,8 +1,8 @@
 package policy
 
 import (
-	"gitee.com/hulutech/frame/context"
-	"gitee.com/hulutech/frame/request/http/auth"
+	"github.com/hulutech-web/frame/context"
+	"github.com/hulutech-web/frame/request/http/auth"
 )
 
 type Context interface {

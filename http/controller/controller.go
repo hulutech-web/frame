@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"gitee.com/hulutech/frame/policy"
-	"gitee.com/hulutech/frame/request/http/auth"
-	"gitee.com/hulutech/frame/validator"
+	"github.com/hulutech-web/frame/policy"
+	"github.com/hulutech-web/frame/request/http/auth"
+	"github.com/hulutech-web/frame/validator"
 )
 
 type Controller interface {

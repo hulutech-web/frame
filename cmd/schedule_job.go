@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"errors"
-	"gitee.com/hulutech/frame/helpers/log"
+	"github.com/hulutech-web/frame/helpers/log"
 )
 
 type job struct {

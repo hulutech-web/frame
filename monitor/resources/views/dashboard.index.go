@@ -1,6 +1,6 @@
 package views
 
-import "gitee.com/hulutech/frame/view"
+import "github.com/hulutech-web/frame/view"
 
 func init() {
 	view.AddView("tmaic_dashboard.index", `{{define "tmaic_dashboard.index"}}

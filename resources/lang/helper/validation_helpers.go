@@ -3,8 +3,8 @@ package helper
 import (
 	"errors"
 
-	"gitee.com/hulutech/frame/resources/lang"
-	"gitee.com/hulutech/frame/resources/lang/internal"
+	"github.com/hulutech-web/frame/resources/lang"
+	"github.com/hulutech-web/frame/resources/lang/internal"
 	ut "github.com/go-playground/universal-translator"
 	"gopkg.in/go-playground/validator.v9"
 )

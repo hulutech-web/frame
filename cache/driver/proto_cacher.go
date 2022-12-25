@@ -4,7 +4,7 @@ import (
 	"time"
 	"github.com/golang/protobuf/proto"
 
-	//"gitee.com/hulutech/frame/helpers/zone"
+	//"github.com/hulutech-web/frame/helpers/zone"
 )
 
 type ProtoCacheGetter interface {

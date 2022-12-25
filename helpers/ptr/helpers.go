@@ -3,10 +3,10 @@ package ptr
 import (
 	"math/big"
 
-	"gitee.com/hulutech/frame/helpers/log"
-	"gitee.com/hulutech/frame/helpers/zone"
-	"gitee.com/hulutech/frame/model/types/bigfloat"
-	"gitee.com/hulutech/frame/model/types/bigint"
+	"github.com/hulutech-web/frame/helpers/log"
+	"github.com/hulutech-web/frame/helpers/zone"
+	"github.com/hulutech-web/frame/model/types/bigfloat"
+	"github.com/hulutech-web/frame/model/types/bigint"
 )
 
 func String(value string) *string {

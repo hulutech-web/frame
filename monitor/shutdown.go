@@ -1,6 +1,6 @@
 package monitor
 
-import "gitee.com/hulutech/frame/monitor/app/logics/dashboard"
+import "github.com/hulutech-web/frame/monitor/app/logics/dashboard"
 
 func Shutdown() error {
 	dashboard.Flow.Close()

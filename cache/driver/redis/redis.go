@@ -7,8 +7,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/jinzhu/copier"
 
-	. "gitee.com/hulutech/frame/cache/utils"
-	//"gitee.com/hulutech/frame/helpers/zone"
+	. "github.com/hulutech-web/frame/cache/utils"
+	//"github.com/hulutech-web/frame/helpers/zone"
 )
 
 func NewRedis(host string, port string, password string, dbIndex int, prefix string) *redis {

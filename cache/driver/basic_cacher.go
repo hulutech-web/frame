@@ -1,6 +1,6 @@
 package driver
 
-//import "gitee.com/hulutech/frame/helpers/zone"
+//import "github.com/hulutech-web/frame/helpers/zone"
 import "time"
 
 type BasicCacher interface {

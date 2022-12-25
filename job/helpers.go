@@ -3,7 +3,7 @@ package job
 import (
 	"errors"
 
-	"gitee.com/hulutech/frame/queue"
+	"github.com/hulutech-web/frame/queue"
 )
 
 func Dispatch(j jobber) error {

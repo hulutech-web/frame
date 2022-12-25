@@ -4,8 +4,8 @@ import (
 	"time"
 	"github.com/golang/protobuf/proto"
 
-	c "gitee.com/hulutech/frame/cache"
-	//"gitee.com/hulutech/frame/helpers/zone"
+	c "github.com/hulutech-web/frame/cache"
+	//"github.com/hulutech-web/frame/helpers/zone"
 )
 
 func Pget(key string, valuePtr proto.Message, defaultValue ...proto.Message) error {

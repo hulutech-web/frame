@@ -1,6 +1,6 @@
 package job
 
-import "gitee.com/hulutech/frame/queue"
+import "github.com/hulutech-web/frame/queue"
 
 // Tmaic do the broadcast it self, for compatible with the queue driver which doesn't support topic broadcasting
 func topicName(j jobber) string {

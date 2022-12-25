@@ -5,8 +5,8 @@ import (
 
 	_nsq "github.com/nsqio/go-nsq"
 
-	"gitee.com/hulutech/frame/config"
-	"gitee.com/hulutech/frame/helpers/hash"
+	"github.com/hulutech-web/frame/config"
+	"github.com/hulutech-web/frame/helpers/hash"
 )
 
 func NewNsq(connection string) *nsq {

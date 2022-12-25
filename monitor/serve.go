@@ -5,14 +5,14 @@ import (
 	"net/http"
 	"sync"
 
-	"gitee.com/hulutech/frame/monitor/resources/views"
+	"github.com/hulutech-web/frame/monitor/resources/views"
 
-	c "gitee.com/hulutech/frame/config"
-	"gitee.com/hulutech/frame/helpers/log"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/helpers/zone"
-	"gitee.com/hulutech/frame/monitor/routes"
-	"gitee.com/hulutech/frame/request"
+	c "github.com/hulutech-web/frame/config"
+	"github.com/hulutech-web/frame/helpers/log"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/helpers/zone"
+	"github.com/hulutech-web/frame/monitor/routes"
+	"github.com/hulutech-web/frame/request"
 )
 
 func HttpMonitorServe(parentCtx context.Context, wg *sync.WaitGroup) {

@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"net/http"
 
-	"gitee.com/hulutech/frame/cache"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/helpers/zone"
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/cache"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/helpers/zone"
+	"github.com/hulutech-web/frame/request"
 
-	"gitee.com/hulutech/frame/helpers/bytes"
+	"github.com/hulutech-web/frame/helpers/bytes"
 )
 
 var limiter *cache.RateLimit

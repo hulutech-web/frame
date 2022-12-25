@@ -3,10 +3,10 @@ package controllers
 import (
 	"net/http"
 
-	"gitee.com/hulutech/frame/config"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/http/controller"
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/config"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/http/controller"
+	"github.com/hulutech-web/frame/request"
 )
 
 type Dashboard struct {

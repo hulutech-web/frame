@@ -6,8 +6,8 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/ztrue/tracerr"
 
-	"gitee.com/hulutech/frame/console"
-	"gitee.com/hulutech/frame/helpers/log"
+	"github.com/hulutech-web/frame/console"
+	"github.com/hulutech-web/frame/helpers/log"
 )
 
 func Dump(v ...interface{}) {

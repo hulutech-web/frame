@@ -1,7 +1,7 @@
 package policy
 
 import (
-	"gitee.com/hulutech/frame/request/http/auth"
+	"github.com/hulutech-web/frame/request/http/auth"
 )
 
 type key = string

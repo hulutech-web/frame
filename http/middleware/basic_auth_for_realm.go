@@ -3,7 +3,7 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/request"
 )
 
 func BasicAuthWithRealm(accounts map[string]string, realm string) request.HandlerFunc {

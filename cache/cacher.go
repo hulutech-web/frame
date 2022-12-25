@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"gitee.com/hulutech/frame/cache/driver"
+	"github.com/hulutech-web/frame/cache/driver"
 )
 
 type cacher interface {

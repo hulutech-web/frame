@@ -7,11 +7,11 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 
-	"gitee.com/hulutech/frame/config"
-	"gitee.com/hulutech/frame/helpers/log"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/helpers/zone"
-	message "gitee.com/hulutech/frame/queue/protocol_buffers"
+	"github.com/hulutech-web/frame/config"
+	"github.com/hulutech-web/frame/helpers/log"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/helpers/zone"
+	message "github.com/hulutech-web/frame/queue/protocol_buffers"
 )
 
 type consumer struct {

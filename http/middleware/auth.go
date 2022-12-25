@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strings"
 
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/request"
-	"gitee.com/hulutech/frame/utils/jwt"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/request"
+	"github.com/hulutech-web/frame/utils/jwt"
 )
 
 const (

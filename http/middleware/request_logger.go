@@ -7,12 +7,12 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"gitee.com/hulutech/frame/config"
-	"gitee.com/hulutech/frame/helpers/log"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/helpers/zone"
-	"gitee.com/hulutech/frame/monitor/app/logics/dashboard"
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/config"
+	"github.com/hulutech-web/frame/helpers/log"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/helpers/zone"
+	"github.com/hulutech-web/frame/monitor/app/logics/dashboard"
+	"github.com/hulutech-web/frame/request"
 )
 
 func RequestLogger() request.HandlerFunc {

@@ -1,12 +1,12 @@
 package versions
 
 import (
-	"gitee.com/hulutech/frame/config"
-	"gitee.com/hulutech/frame/http/middleware"
-	"gitee.com/hulutech/frame/monitor/routes/groups"
+	"github.com/hulutech-web/frame/config"
+	"github.com/hulutech-web/frame/http/middleware"
+	"github.com/hulutech-web/frame/monitor/routes/groups"
 
-	"gitee.com/hulutech/frame/request"
-	"gitee.com/hulutech/frame/route"
+	"github.com/hulutech-web/frame/request"
+	"github.com/hulutech-web/frame/route"
 )
 
 func NewMonitor(engine *request.Engine) {

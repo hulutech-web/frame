@@ -3,8 +3,8 @@ package route
 import (
 	"github.com/gin-gonic/gin"
 
-	"gitee.com/hulutech/frame/http/middleware"
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/http/middleware"
+	"github.com/hulutech-web/frame/request"
 )
 
 type version struct {

@@ -1,10 +1,10 @@
 package middleware
 
 import (
-	l "gitee.com/hulutech/frame/helpers/locale"
-	"gitee.com/hulutech/frame/request"
+	l "github.com/hulutech-web/frame/helpers/locale"
+	"github.com/hulutech-web/frame/request"
 
-	"gitee.com/hulutech/frame/config"
+	"github.com/hulutech-web/frame/config"
 )
 
 func Locale() request.HandlerFunc {

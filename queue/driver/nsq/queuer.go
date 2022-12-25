@@ -8,7 +8,7 @@ import (
 
 	_nsq "github.com/nsqio/go-nsq"
 
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 type nsq struct {

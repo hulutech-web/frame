@@ -5,10 +5,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"gitee.com/hulutech/frame/request/websocket"
+	"github.com/hulutech-web/frame/request/websocket"
 
-	"gitee.com/hulutech/frame/policy"
-	"gitee.com/hulutech/frame/request"
+	"github.com/hulutech-web/frame/policy"
+	"github.com/hulutech-web/frame/request"
 )
 
 type RouteGrouper interface {

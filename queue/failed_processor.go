@@ -1,9 +1,9 @@
 package queue
 
 import (
-	"gitee.com/hulutech/frame/config"
-	"gitee.com/hulutech/frame/helpers/zone"
-	message "gitee.com/hulutech/frame/queue/protocol_buffers"
+	"github.com/hulutech-web/frame/config"
+	"github.com/hulutech-web/frame/helpers/zone"
+	message "github.com/hulutech-web/frame/queue/protocol_buffers"
 )
 
 var failedProcessor FailedProcessor

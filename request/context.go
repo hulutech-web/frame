@@ -3,9 +3,9 @@ package request
 import (
 	"github.com/gin-gonic/gin"
 
-	"gitee.com/hulutech/frame/context"
-	"gitee.com/hulutech/frame/request/http/auth"
-	"gitee.com/hulutech/frame/utils/jwt"
+	"github.com/hulutech-web/frame/context"
+	"github.com/hulutech-web/frame/request/http/auth"
+	"github.com/hulutech-web/frame/utils/jwt"
 )
 
 type Context interface {

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strconv"
 
-	"gitee.com/hulutech/frame/cmd"
-	"gitee.com/hulutech/frame/queue"
+	"github.com/hulutech-web/frame/cmd"
+	"github.com/hulutech-web/frame/queue"
 )
 
 func init() {

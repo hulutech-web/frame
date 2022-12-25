@@ -1,9 +1,9 @@
 package log
 
 import (
-	"gitee.com/hulutech/frame/errors"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/logs"
+	"github.com/hulutech-web/frame/errors"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/logs"
 )
 
 func Error(err error, v ...toto.V) error {

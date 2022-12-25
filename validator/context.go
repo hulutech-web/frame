@@ -1,8 +1,8 @@
 package validator
 
 import (
-	"gitee.com/hulutech/frame/context"
-	"gitee.com/hulutech/frame/resources/lang"
+	"github.com/hulutech-web/frame/context"
+	"github.com/hulutech-web/frame/resources/lang"
 )
 
 type Context interface {

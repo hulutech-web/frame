@@ -7,8 +7,8 @@ import (
 	"github.com/jinzhu/copier"
 	c "github.com/patrickmn/go-cache"
 
-	. "gitee.com/hulutech/frame/cache/utils"
-	"gitee.com/hulutech/frame/helpers/zone"
+	. "github.com/hulutech-web/frame/cache/utils"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 func NewMemory(prefix string, defaultExpirationMinute uint, cleanUpIntervalMinute uint) *memory {

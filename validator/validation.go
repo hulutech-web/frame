@@ -8,10 +8,10 @@ import (
 
 	"gopkg.in/go-playground/validator.v9"
 
-	"gitee.com/hulutech/frame/helpers/locale"
-	"gitee.com/hulutech/frame/helpers/log"
-	"gitee.com/hulutech/frame/helpers/toto"
-	"gitee.com/hulutech/frame/helpers/trans"
+	"github.com/hulutech-web/frame/helpers/locale"
+	"github.com/hulutech-web/frame/helpers/log"
+	"github.com/hulutech-web/frame/helpers/toto"
+	"github.com/hulutech-web/frame/helpers/trans"
 )
 
 type Validation struct {

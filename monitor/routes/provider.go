@@ -1,9 +1,9 @@
 package routes
 
 import (
-	"gitee.com/hulutech/frame/monitor/routes/versions"
-	"gitee.com/hulutech/frame/request"
-	"gitee.com/hulutech/frame/route"
+	"github.com/hulutech-web/frame/monitor/routes/versions"
+	"github.com/hulutech-web/frame/request"
+	"github.com/hulutech-web/frame/route"
 )
 
 func Register(router *request.Engine) {

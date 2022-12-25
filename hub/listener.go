@@ -3,7 +3,7 @@ package hub
 import (
 	"github.com/golang/protobuf/proto"
 
-	"gitee.com/hulutech/frame/helpers/zone"
+	"github.com/hulutech-web/frame/helpers/zone"
 )
 
 type Listener interface {

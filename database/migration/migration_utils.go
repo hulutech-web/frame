@@ -3,9 +3,9 @@ package migration
 import (
 	"fmt"
 
-	"gitee.com/hulutech/frame/console"
-	"gitee.com/hulutech/frame/helpers/m"
-	"gitee.com/hulutech/frame/model"
+	"github.com/hulutech-web/frame/console"
+	"github.com/hulutech-web/frame/helpers/m"
+	"github.com/hulutech-web/frame/model"
 )
 
 type MigrationUtils struct {

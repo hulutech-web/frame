@@ -1,8 +1,8 @@
 package migration
 
 import (
-	"gitee.com/hulutech/frame/cmd"
-	"gitee.com/hulutech/frame/database/migration"
+	"github.com/hulutech-web/frame/cmd"
+	"github.com/hulutech-web/frame/database/migration"
 )
 
 func init() {

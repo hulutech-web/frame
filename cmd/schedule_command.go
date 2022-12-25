@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"gitee.com/hulutech/frame/cmd/schedule"
+	"github.com/hulutech-web/frame/cmd/schedule"
 )
 
 type scheduleCommand struct {

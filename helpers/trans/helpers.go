@@ -1,10 +1,10 @@
 package trans
 
 import (
-	"gitee.com/hulutech/frame/resources/lang"
+	"github.com/hulutech-web/frame/resources/lang"
 	"gopkg.in/go-playground/validator.v9"
 
-	"gitee.com/hulutech/frame/resources/lang/helper"
+	"github.com/hulutech-web/frame/resources/lang/helper"
 )
 
 func ValidationTranslate(v *validator.Validate, langName string, e validator.ValidationErrors) lang.ValidationError {

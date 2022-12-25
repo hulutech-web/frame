@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"gitee.com/hulutech/frame/model"
+	"github.com/hulutech-web/frame/model"
 	"github.com/jinzhu/copier"
 	"gopkg.in/go-playground/validator.v9"
 	"gorm.io/gorm"

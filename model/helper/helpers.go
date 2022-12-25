@@ -4,7 +4,6 @@ import (
 	"errors"
 	"reflect"
 	"strings"
-
 	"github.com/hulutech-web/frame/model"
 	"github.com/jinzhu/copier"
 	"gopkg.in/go-playground/validator.v9"

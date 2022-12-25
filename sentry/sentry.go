@@ -6,12 +6,11 @@ import (
 	"github.com/getsentry/raven-go"
 	"github.com/gin-contrib/sentry"
 	"github.com/gin-gonic/gin"
-
 	"github.com/hulutech-web/frame/config"
 )
 
 var enabled bool
-
+//哨兵
 func Initialize() {
 	enabled = config.GetBool("sentry.enable")
 	if enabled {

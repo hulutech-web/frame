@@ -17,16 +17,12 @@ var db *gorm.DB
 var dber databaser
 
 
-/****
-**** pangxianfeu by add
-****/
+
 func Initialize() {
 	dber, db = setv2Connection("default")
 }
 
-/**
-  pangxianfei by add
-*/
+
 func setv2Connection(conn string) (dber databaser, sqlDb *gorm.DB) {
 
 	if conn == "" {

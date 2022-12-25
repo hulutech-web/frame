@@ -14,7 +14,7 @@ type Dashboard struct {
 }
 
 func (d *Dashboard) Index(c request.Context) {
-	c.HTML(http.StatusOK, "tmaic.index", toto.V{
+	c.HTML(http.StatusOK, "hulu.index", toto.V{
 		"url": "ws://" + ":" + config.GetString("monitor.port") + "/monitor/dashboard/ws",
 	})
 	return

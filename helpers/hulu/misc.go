@@ -1,4 +1,4 @@
-package tmaic
+package hulu
 
 import (
 	"crypto/md5"

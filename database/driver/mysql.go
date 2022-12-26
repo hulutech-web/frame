@@ -56,9 +56,9 @@ func (_mys *mysql) collation() string {
 func (_mys *mysql) config(key string) string {
 	fmt.Println("database.connections." + _mys.connection() + "." + key)
 	value := config.GetString("database.connections." + _mys.connection() + "." + key)
-	if value == "" {
-		panic("database " + key + " parse error")
-	}
+	//if value == "" {
+	//	panic("database " + key + " parse error")
+	//}
 	return value
 }
 func (_mys *mysql) ConnectionArgs() string {

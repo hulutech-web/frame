@@ -1,7 +1,6 @@
 package driver
 
 import (
-	"fmt"
 	"net/url"
 
 	"github.com/hulutech-web/frame/config"
@@ -54,7 +53,6 @@ func (_mys *mysql) collation() string {
 	return _mys.config("collation")
 }
 func (_mys *mysql) config(key string) string {
-	fmt.Println("database.connections." + _mys.connection() + "." + key)
 	value := config.GetString("database.connections." + _mys.connection() + "." + key)
 	//if value == "" {
 	//	panic("database " + key + " parse error")

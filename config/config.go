@@ -18,7 +18,7 @@ func init() {
 		panic(fmt.Errorf("Fatal error config file: %s \n", err))
 	}
 
-	v.SetEnvPrefix("Tmaic")
+	v.SetEnvPrefix("hulu")
 	v.AutomaticEnv()
 }
 

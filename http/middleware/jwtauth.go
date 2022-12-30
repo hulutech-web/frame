@@ -32,7 +32,7 @@ func JWTAuthRequired(signKey string) request.HandlerFunc {
 		token = strings.Replace(token, "Bearer ", "", -1)
 		if token == "" {
 			c.JSON(http.StatusOK, gin.H{
-				"status":  -1,
+				"code":  -1,
 				"message": "请求未携带token，无权限访问",
 			})
 			c.Abort()
@@ -44,14 +44,14 @@ func JWTAuthRequired(signKey string) request.HandlerFunc {
 		if err != nil {
 			if err == TokenExpired {
 				c.JSON(http.StatusOK, gin.H{
-					"status":  -1,
+					"code":  -1,
 					"message": "授权已过期",
 				})
 				c.Abort()
 				return
 			}
 			c.JSON(http.StatusOK, gin.H{
-				"status":  -1,
+				"code":  -1,
 				"message": err.Error(),
 			})
 			c.Abort()

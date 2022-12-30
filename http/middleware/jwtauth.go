@@ -16,6 +16,7 @@ import (
 	"time"
 )
 
+
 // 新建一个jwt实例
 func NewJWT(signKey string) *JWT {
 	return &JWT{
@@ -87,10 +88,11 @@ type CustomClaims struct {
 }
 
 // CreateToken 生成一个token
-func (j *JWT) CreateToken(id string, name string, modelName string) (string, error) {
+func (j *JWT) CreateToken(model interface{}) (string, error) {
+	id, modelName, username := ReflectTokenModel(model)
 	claims := CustomClaims{
-		id,
-		name,
+		strconv.Itoa(id),
+		username,
 		modelName,
 		false,
 		jwt.RegisteredClaims{
@@ -101,7 +103,7 @@ func (j *JWT) CreateToken(id string, name string, modelName string) (string, err
 	}
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
 	//这里往personal_access_token中插入一条数据
-	OwnerId, _ := strconv.Atoi(id)
+	OwnerId := id
 	tokenstr, err := token.SignedString(j.SigningKey)
 	//插入数据库===================
 	DB().Create(&models.PersonalAccessToken{
@@ -154,35 +156,37 @@ func (j *JWT) RefreshToken(tokenString string) (string, error) {
 		jwt.TimeFunc = time.Now
 		//转int64
 		claims.RegisteredClaims.ExpiresAt = jwt.NewNumericDate(time.Now().Add(24 * time.Hour))
-		return j.CreateToken(claims.ID, claims.UserName, claims.ModelName)
+		return j.CreateToken(claims)
 	}
 	return "", TokenInvalid
 }
 
 // 删除token
 func (j *JWT) DeleteToken(tokenString string) error {
-	var personalAccessToken models.PersonalAccessToken
-	DB().Where("token = ?", tokenString).First(&personalAccessToken).Delete(&personalAccessToken)
 	return nil
 }
 
 // 反射取出id和userModelName
-func ReflectTokenModel(a interface{}) (int, string) {
+func ReflectTokenModel(a interface{}) (int, string, string) {
 	typ := reflect.TypeOf(a)
 	val := reflect.ValueOf(a)
 	kd := val.Kind()
 
 	if kd != reflect.Struct {
 		fmt.Println("expect struct")
-		return 0, ""
+		return 0, "", ""
 	}
 	//获取到结构体中的id字段
 	idField := val.FieldByName("ID")
+	usernameField := val.FieldByName("Username")
+
 	//获取id字段的值
 	id := idField.Uint()
+	//获取username字段的值
+	username := usernameField.String()
 	//获取模型名称，比如AdminUser或者User
 	modelName := typ.Name()
-	return int(id), modelName
+	return int(id), modelName, username
 }
 
 func AuthUser(token string) interface{} {

@@ -4,8 +4,8 @@ import (
 	"crypto/md5"
 	"errors"
 	"fmt"
-	"time"
 	"gopkg.in/dgrijalva/jwt-go.v3"
+	"time"
 
 	"github.com/hulutech-web/frame/helpers/cache"
 	"github.com/hulutech-web/frame/helpers/debug"
@@ -40,8 +40,9 @@ var (
 )
 
 type UserClaims struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
+	ID        string `json:"id"`
+	Name      string `json:"name"`
+	ModelName string `json:"model_name"`
 	//Email string `json:"email"`
 	Revoked bool `json:"revoked"`
 	jwt.StandardClaims
@@ -85,12 +86,13 @@ func NewJWT(signKey string) *JWT {
 		[]byte(signKey),
 	}
 }
-func (j *JWT) CreateToken(id string, name string) (string, error) {
+func (j *JWT) CreateToken(id string, name string, modelName string) (string, error) {
 	jwt.TimeFunc = zone.Now
 	now := zone.Now()
 	claims := UserClaims{
 		id,
 		name,
+		modelName,
 		false,
 		jwt.StandardClaims{
 			IssuedAt:  now.Unix(),
@@ -149,7 +151,7 @@ func (j *JWT) RefreshToken(tokenString string) (string, error) {
 	}
 	if claims, ok := token.Claims.(*UserClaims); ok && token.Valid {
 		//claims.StandardClaims.ExpiresAt = zone.Now().Add(ExpiredTime).Unix()
-		return j.CreateToken(claims.ID, claims.Name)
+		return j.CreateToken(claims.ID, claims.Name,claims.ModelName)
 	}
 	return "", TokenInvalid
 }
@@ -195,7 +197,7 @@ func (j *JWT) RefreshTokenUnverified(tokenString string) (string, error) {
 		//claims.StandardClaims.ExpiresAt = zone.Now().Add(ExpiredTime).Unix()
 		// after refresh expired time, then cannot do auto refresh
 		if !zone.Now().After(zone.Unix(claims.ExpiresAt, 0).Add(RefreshExpiredTime)) {
-			newToken, err := j.CreateToken(claims.ID, claims.Name)
+			newToken, err := j.CreateToken(claims.ID, claims.Name,claims.ModelName)
 			if err != nil {
 				return "", err
 			}

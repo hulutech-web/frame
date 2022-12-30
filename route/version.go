@@ -24,6 +24,11 @@ func (v *version) Auth(signKey string, relativePath string, groupFunc func(grp G
 	groupFunc(&group{engineHash: v.engine.Hash(), RouterGroup: ginGroup})
 }
 
+func (v *version) JWTAuth(signKey string, relativePath string, groupFunc func(grp Grouper), handlers ...request.HandlerFunc) {
+	ginGroup := v.group.Group(relativePath, request.ConvertHandlers(append([]request.HandlerFunc{middleware.JWTAuthRequired(signKey)}, handlers...))...)
+	groupFunc(&group{engineHash: v.engine.Hash(), RouterGroup: ginGroup})
+}
+
 func (v *version) NoAuth(relativePath string, groupFunc func(grp Grouper), handlers ...request.HandlerFunc) {
 	ginGroup := v.group.Group(relativePath, request.ConvertHandlers(handlers)...)
 	groupFunc(&group{engineHash: v.engine.Hash(), RouterGroup: ginGroup})

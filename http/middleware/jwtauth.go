@@ -16,7 +16,6 @@ import (
 	"time"
 )
 
-
 // 新建一个jwt实例
 func NewJWT(signKey string) *JWT {
 	return &JWT{
@@ -32,7 +31,7 @@ func JWTAuthRequired(signKey string) request.HandlerFunc {
 		token = strings.Replace(token, "Bearer ", "", -1)
 		if token == "" {
 			c.JSON(http.StatusOK, gin.H{
-				"code":  -1,
+				"code":    -1,
 				"message": "请求未携带token，无权限访问",
 			})
 			c.Abort()
@@ -44,14 +43,14 @@ func JWTAuthRequired(signKey string) request.HandlerFunc {
 		if err != nil {
 			if err == TokenExpired {
 				c.JSON(http.StatusOK, gin.H{
-					"code":  -1,
+					"code":    -1,
 					"message": "授权已过期",
 				})
 				c.Abort()
 				return
 			}
 			c.JSON(http.StatusOK, gin.H{
-				"code":  -1,
+				"code":    -1,
 				"message": err.Error(),
 			})
 			c.Abort()
@@ -196,13 +195,12 @@ func AuthUser(token string) interface{} {
 	DB().Where("token = ?", token).Order("last_used_at desc").First(&personalAccessToken)
 	//根据owner_type和owner_id查询出用户
 	if personalAccessToken.OwnerType == "Admin" {
-		var adminUser *models.Admin
-
+		adminUser := &models.Admin{}
 		DB().Where("id = ?", personalAccessToken.OwnerId).First(adminUser)
-		return &adminUser
+		return adminUser
 	} else {
-		var user *models.User
+		user := &models.User{}
 		DB().Where("id = ?", personalAccessToken.OwnerId).First(user)
-		return &user
+		return user
 	}
 }

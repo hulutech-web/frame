@@ -196,12 +196,12 @@ func AuthUser(token string) interface{} {
 	DB().Where("token = ?", token).Order("last_used_at desc").First(&personalAccessToken)
 	//根据owner_type和owner_id查询出用户
 	if personalAccessToken.OwnerType == "Admin" {
-		var adminUser models.Admin
-		DB().Where("id = ?", personalAccessToken.OwnerId).First(&adminUser)
+		var adminUser *models.Admin
+		DB().Where("id = ?", personalAccessToken.OwnerId).First(adminUser)
 		return adminUser
 	} else {
-		var user models.User
-		DB().Where("id = ?", personalAccessToken.OwnerId).First(&user)
+		var user *models.User
+		DB().Where("id = ?", personalAccessToken.OwnerId).First(user)
 		return user
 	}
 }

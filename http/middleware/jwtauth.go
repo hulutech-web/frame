@@ -197,6 +197,7 @@ func AuthUser(token string) interface{} {
 	//根据owner_type和owner_id查询出用户
 	if personalAccessToken.OwnerType == "Admin" {
 		var adminUser *models.Admin
+
 		DB().Where("id = ?", personalAccessToken.OwnerId).First(adminUser)
 		return &adminUser
 	} else {

@@ -198,10 +198,10 @@ func AuthUser(token string) interface{} {
 	if personalAccessToken.OwnerType == "Admin" {
 		var adminUser *models.Admin
 		DB().Where("id = ?", personalAccessToken.OwnerId).First(adminUser)
-		return adminUser
+		return &adminUser
 	} else {
 		var user *models.User
 		DB().Where("id = ?", personalAccessToken.OwnerId).First(user)
-		return user
+		return &user
 	}
 }
